@@ -22,10 +22,11 @@
 :root {
   --white: #fff;
   --semi-transparent-white: #d7ccc0;
-  --light: #f5f4f0;
+  --background: #f5f4f0;
   --primary: #fe8a02;
   --primary-dark: #42413c;
   --text: #2a2626;
+  --text-dark: #212529;
   --semi-transparent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
@@ -43,8 +44,11 @@ body {
 .container {
   width: 1110px;
   margin: 0 auto;
+}
+
+.background {
+  background-color: var(--background);
   overflow: hidden;
-  
 }
 
 .background::before {
@@ -59,27 +63,36 @@ body {
   opacity: 0.1;  
 }
 
+.title {
+  font-family: 'Neucha Regular';
+  line-height: 1.2em; 
+}
+
+.title span {
+  color: var(--primary);
+}
+
 .text {
   column-count: 2;
   column-gap: 30px;
 }
 
-/** HEADER **/
-
-.header {
-  position: relative;
+.p-100 {
   padding: 100px 0;
 }
 
-.header-title {
-  font-family: 'Neucha Regular';
-  font-size: 72px;
-  line-height: 1.2em; 
-  margin-bottom: 185px;
+.mb-30 {
+  margin-bottom: 30px;
 }
 
-.header-title span {
-  color: var(--primary);
+/** HEADER **/
+.header {
+  position: relative;
+}
+
+.header-title {
+  font-size: 72px;
+  margin-bottom: 185px;
 }
 
 .header-image {
@@ -94,24 +107,47 @@ body {
 }
 
 .header-btn {
+  position: relative;
+  left: 51.5%;
   display: inline-block;
+  font-family: 'Open Sans Bold';
   font-weight: 700;
   line-height: 160%;
 /* identical to box height, or 26px */
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--white);
   background-color: var(--primary);
   padding: 12px 24px;
-  font-family: 'Open Sans Bold';
-  position: relative;
-  left: 51.5%;
 }
 
+/** VIDEO **/
+/* .video {
+  position: relative;
+  height: 814px;
+} */
 
+.video-title {
+  font-size: 60px;
+  text-align: center;
+}
 
+.video-text {
+  text-align: center;
+  color: var(--text-dark);
+}
 
-.hello {
-  display: block;
+.video-player {
+  position: relative;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  margin-top: -200px;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
 
-  color: #fff;
+/** NAVIGATION **/
+
+.navigation {
+  background-color: var(--primary-dark);
+  padding-top: 200px;
 }
