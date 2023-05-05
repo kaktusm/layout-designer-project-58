@@ -74,7 +74,11 @@ body {
   color: var(--primary);
 }
 
-.text {
+img {
+  width: 100%;
+}
+
+.col-2 {
   column-count: 2;
   column-gap: 30px;
 }
@@ -85,6 +89,49 @@ body {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+/* .mb-100 {
+  margin-bottom: 100px;
+} */
+
+.subtitle {
+  font-family: 'Neucha Regular';
+  font-size: 24px;
+  line-height: 120%;
+  color:var(--semi-transparent-dark);
+}
+
+.fs-72 {
+  font-size: 72px;
+}
+
+.description {
+  font-family: 'Neucha Regular';
+  font-size: 34px;
+  line-height: 120%;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding: 5px 0 5px 10px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.bg-brown {
+  background-color: var(--brown);
+} 
+
+.wht {
+  color: var(--white);
+}
+
+.col-2 p {
+  break-inside: avoid;
 }
 
 /** HEADER **/
@@ -169,6 +216,11 @@ body {
   min-height: 323px;
   background-color: var(--background);
 }
+
+.navigation-link {
+  color: inherit;
+}
+
 .card {
   padding: 24px;
 }
@@ -187,4 +239,10 @@ body {
   line-height: 120%;
   color: var(--primary);
   margin-bottom: 16px;
+}
+
+/** IKEA **/
+
+.ikea-effect {
+  position: relative;
 }
