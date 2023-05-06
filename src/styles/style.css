@@ -256,10 +256,10 @@ body {
 
 /** IKEA **/
 
-.ikea-effect {
-  position: relative;
-}
-
-.premature-optimization {
+.ikea-effect,
+.premature-optimization,
+.distortion,
+.depreciation
+ {
   position: relative;
 }
