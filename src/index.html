@@ -36,7 +36,7 @@
           <li class="navigation-card"><a href="#ikea" class="navigation-link">
             <div class="card">
               <div class="card-body"><!-- Начало текстового контента -->
-                <h6 class="card-subtitle">1</h6>
+                <p class="card-subtitle">1</p>
                 <h4 class="card-title">Эффект ИКЕА</h4>
                 <p class="card-text">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
               </div><!-- Конец текстового контента -->
@@ -45,7 +45,7 @@
           <li class="navigation-card"><a href="#premature-optimization" class="navigation-link">
             <div class="card">
               <div class="card-body"><!-- Начало текстового контента -->
-                <h6 class="card-subtitle">2</h6>
+                <p class="card-subtitle">2</p>
                 <h4 class="card-title">Преждевременная оптимизация</h4>
                 <p class="card-text">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
               </div><!-- Конец текстового контента -->
@@ -178,6 +178,27 @@
       </div>
     </section>
 	</main>
-  <footer class="footer"></footer>
+  <footer class="footer p-100">
+    <div class="container">
+      <div class="footer-subscribe subscribe">
+        <div class="subscribe-body">
+          <h4 class="subscribe-title title">Хотите узнать больше? Подпишитесь на обновления</h4>
+          <form action="#" class="subscribe-form">
+            <label for="email" class="label wht">Электронная почта</label>
+            <div class="subscribe-row">
+              <input id="email" autocomplete="off" type="email" required name="form[]" placeholder="Ваша электронная почта" class="subscribe__input">
+              <button type="submit" class="subscribe-btn"></button>
+            </div>
+            <p class="subscribe-text wht">Подписываясь, вы принимаете <a class="subscribe-link" href="#">правила сервиса</a></p>
+          </form>
+        </div>
+      </div>
+      <p class="footer-copyright mb-16">© 2023 Мария Медовар</p>
+      <div class="footer-links">
+        <p class="mb-16">По материалам статьи <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b" class="footer-link" target="_blank">Yash Ranadive Cognitive Biases in Programming</a></p>
+        <p><a href="https://ru.hexlet.io/my" class="footer-link" target="_blank">Курсы программирования Hexlet</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
